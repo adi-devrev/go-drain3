@@ -10,6 +10,8 @@ type FilePersistence struct {
 	filePath string
 }
 
+var _ Persistence = (*FilePersistence)(nil)
+
 func NewFilePersistence(filePath string) *FilePersistence {
 	return &FilePersistence{filePath: filePath}
 }
