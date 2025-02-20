@@ -9,7 +9,7 @@ for more information about drain3, please refer to the official drain3 repositor
 to install go-drain3, run the following command:
 
 ```shell
-go get github.com/jaeyo/go-drain3
+go get github.com/adi-devrev/go-drain3
 ```
 
 ## Contribbuting

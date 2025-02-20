@@ -1,16 +1,16 @@
 package drain3
 
 import (
+	"context"
 	"fmt"
 	"os"
-	"context"
 )
 
 type FilePersistence struct {
 	filePath string
 }
 
-var _ Persistence = (*FilePersistence)(nil)
+var _ PersistenceHandler = (*FilePersistence)(nil)
 
 func NewFilePersistence(filePath string) *FilePersistence {
 	return &FilePersistence{filePath: filePath}
